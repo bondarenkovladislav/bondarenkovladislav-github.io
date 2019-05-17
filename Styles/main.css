@@ -182,10 +182,11 @@ li:hover:not(#logo){
     height:100%;
     display:block;
     align-items: center;
-    background-image: url('../res/aia_304_sunrise_wallpaper_1920x1080.png');
+    background-image: url('../res/aia_304_sunrise_wallpaper_1920x1080.jpg');
     background-size:contain;
-    background-position:50% 140%;
+    /*background-position:50% 140%;*/
     background-repeat: no-repeat;
+    background-position: bottom;
     text-align: center;
 }
 .sun h3{
