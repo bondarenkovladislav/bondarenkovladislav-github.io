@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <head>
     <meta charset="UTF-8">
@@ -27,7 +28,7 @@
         <li id = "logo">VB</li>
         <li><a href="#">About</a></li>
         <li><a href ="#">Featured Works</li>
-        <li><a href ="#">Contacts</a></li>
+        <li><a href ="contact.html">Contacts</a></li>
     </ul>
 </div>
 
@@ -37,12 +38,77 @@
     <a data-aos = "fade-up" data-aos-duration = "2000" data-aos-delay="1000" style ="color: #a1a1a1;">Contact</a>
 </div>
 
-<div class = "about"></div>
-<div class  = "sun" id="sun">
-    <h3>My motivation</h3>
-    <p>95% success is labor, and the remaining 5% is talent.<br> -Mozart</p>
-<!--    <img data-aos = "zoom-in-up"  data-aos-duration="2000" src="res/aia_304_sunrise_wallpaper_1920x1080.png">-->
+<!--    <p id="title">My skills</p>-->
+<div class="table">
+    <h3>My Skills</h3>
+    <div data-aos="fade-right" data-aos-duration="1500" class = "row" style="margin:0">
+        <div class="column">
+            <div class="flex-image" style ="width:100%; background-image: url('https://cdn-images-1.medium.com/max/1600/1*9wHrewC1Dyf2Au_qEqwWcg.jpeg');"> </div>
+        </div>
+        <div class = "column">
+    <!--        <div class="block">-->
+                <h4>Data Science</h4>
+                <p style ="width:100%">OpenCV, Numpy, Pandas, Matplotlib, Scikit-learn, Keras, Tensorflow, Xgboost, Catboost and more.</p>
+
+        </div>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1500" class = "row" style="margin:0">
+        <div class = "column">
+                <h4>Web Development and Programming Languages</h4>
+                <p style ="width:100%">Html, Css, JavaScript, C, C++, C#, Python, Java, JavaScript, Php</p>
+        </div>
+        <div class="column">
+            <div class = "flex-image" style ="width:100%; background-image: url('https://www.cam.ac.uk/sites/www.cam.ac.uk/files/styles/content-885x432/public/news/research/features/1610202019-by-experienssthierry-ehrmann.jpg?itok=r0KsIFRp');"> </div>
+        </div>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="1500" class = "row" style="margin:0">
+        <div class="column">
+            <div class = "flex-image" style ="width:100%; background-image: url('https://www.nvidia.com/content/dam/en-zz/es_em/Solutions/geforce/Pascal/Home/geforce-gtx-graphics-cards-297-dtm@2x.jpg');"> </div>
+        </div>
+        <div class = "column">
+            <h4>Graphics</h4>
+            <p style ="width:100%">OpenGL, Unity</p>
+        </div>
+    </div>
+
+    <div data-aos="fade-left" data-aos-duration="1500" class = "row" style="margin:0">
+
+        <div class = "column">
+            <h4>AR Development</h4>
+            <p style ="width:100%">Vuforia in Unity environment</p>
+        </div>
+        <div class="column">
+            <div class = "flex-image" style ="width:100%; background-image: url('https://mediaserver.goepson.com/ImConvServlet/imconv/00a52eb00c6769396b43a38078e46a0a1eae6311/original?use=productpictures&assetDescr=moverio-hub_bg_devices')"> </div>
+        </div>
+    </div>
 </div>
+
+<div class="contacts">
+    <div class="card">
+        <i class="fas fa-envelope"></i>
+        <h4>EMAIL</h4>
+        <hr class="line">
+        <p>v.bondarenko1@uniyar.ac.ru<br> bondarencko40@gmail.com</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-mobile"></i>
+        <h4>PHONE</h4>
+        <hr class="line">
+        <p>+7(961)025-73-37</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-link"></i>
+        <h4>LINKS</h4>
+        <hr class="line">
+        <p></p>
+    </div>
+</div>
+
+<!--<div class = "about"></div>-->
+<!--<div class  = "sun" id="sun">-->
+<!--    <h3>My motivation</h3>-->
+<!--    <p>95% success is labor, and the remaining 5% is talent.<br> -Mozart</p>-->
+<!--</div>-->
 <script src = "./Scripts/sun.js"></script>
 </body>
 </html>
