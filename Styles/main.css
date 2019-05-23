@@ -35,7 +35,7 @@ canvas {
 .big-title{
     position:relative;
     width: 100%;
-    top:30%;
+    top:40%;
 }
 
 #name{
@@ -116,6 +116,20 @@ li:not(#logo){
 }
 li:hover:not(#logo){
     background-color: rgba(69, 69, 69, 0.74);
+    /*overflow: hidden;*/
+}
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    z-index:1;
+    height:7.6%;
+}
+
+.nav-bar.scrolled {
+    background-color: rgba(38, 38, 38, 0.99) !important;
+    /*background-color: black; !important;*/
+    transition: background-color 200ms linear;
+    overflow: hidden;
 }
 
 .nav-bar a{
@@ -144,27 +158,18 @@ li:hover:not(#logo){
     transform: scale(1.5,1.5);
     margin: 1em;
 }
-.about{
-    position:absolute;
-    display:block;
-    /*background:linear-gradient(to bottom,#1d2022 0%, rgba(41, 41, 41, 0.9) 50%, rgba(99, 99, 99, 0.8) 100%);*/
-    /*background:linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(41, 41, 41, 0.9) 50%, rgba(99, 99, 99, 0.8) 100%);*/
-    background-color:black;
-    top:99%;
-    height: 100%;
-    width:100%;
-}
 
 .sun{
-    top:200%;
+    top:340%;
     overflow: hidden;
     position:absolute;
     width:100%;
     height:100%;
     display:block;
     align-items: center;
-    background-image: url('../res/aia_304_sunrise_wallpaper_1920x1080.jpg');
-    background-size:contain;
+    /*background-image: url('../res/aia_304_sunrise_wallpaper_1920x1080.jpg');*/
+    background-image: url('../res/aigetty.jpg');
+    background-size:65% 65%;
     /*background-position:50% 140%;*/
     background-repeat: no-repeat;
     background-position: bottom;
@@ -172,14 +177,20 @@ li:hover:not(#logo){
     background-color:black;
 }
 .sun h3{
+    color:#cc732f;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 4em;
+    font-weight: bold;
     margin-top:10%;
     display:block;
     width:100%;
     position:absolute;
-    color: #db5629;
-    font-size:3em;
+    /*color: #db5629;*/
+    /*font-size:3em;*/
 }
 .sun p{
+    font-family: Montserrat;
     position:absolute;
     display:block;
     width:100%;
@@ -188,7 +199,7 @@ li:hover:not(#logo){
     color: #6e6e6e;
 }
 .table{
-    top:58%;
+    top:68%;
     display: flex;
     padding: 5% 20%;
     position:relative;
@@ -251,25 +262,27 @@ li:hover:not(#logo){
 
 .contacts{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
-    top:56%;
+    top:66%;
     width:100%;
-    height:100%;
-    background-image:url('https://i.pinimg.com/originals/1a/43/30/1a43301af0a2a695387fd21c972b77ed.jpg');
+    height:50%;
+    /*background-image:url('https://i.pinimg.com/originals/1a/43/30/1a43301af0a2a695387fd21c972b77ed.jpg');*/
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4%;
+    padding: 4% 15%;
 }
 .contacts .card{
+    margin-top:7%;
     display:flex;
-    flex:50%;
-    width:25%;
-    margin-left:18%;
+    flex:30%;
+    height:70%;
+    margin-left:2%;
     margin-bottom: 1%;
-    background-color: #848484;
+    background-color: #383838;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
@@ -277,7 +290,7 @@ li:hover:not(#logo){
     border-bottom: 3px solid orange;
 }
 .contacts h4{
-    color: rgba(0, 0, 0, 1);
+    color: rgb(169, 169, 169);
     font-family: Montserrat;
     font-size: 1.7em;
 }
@@ -286,7 +299,7 @@ li:hover:not(#logo){
     border-width: .25rem;
     width: 3rem;
 }
-.contacts i{
+.card i{
     color:orange;
     font-size: 1.5em;
     margin-bottom:5%;
@@ -294,5 +307,50 @@ li:hover:not(#logo){
 .contacts p{
     font-family: Montserrat;
     font-size:1.2em;
-    color: rgba(0, 0, 0, 0.91);
+    color: rgba(212, 212, 212, 0.91);
+}
+.contacts .icon-row i{
+    /*padding-right: 0.2em;*/
+    font-size: 2em;
+    color: rgba(212, 212, 212, 0.91);
+    transition: font-size 0.3s, color 0.5s;
+}
+.contacts .icon-row i:hover{
+    font-size: 2.3em;
+    color:orange;
+}
+#cont-text{
+    color:#cc732f;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top:20%;
+    font-family: Montserrat;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+footer{
+    top:152%;
+    position: relative;
+    height: 10%;
+    /*background-color: #606060*/
+    /*background:linear-gradient(black, #5d5d5d);*/
+    background-color: black;
+
+}
+footer p{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    color: #909090;
+    margin-bottom:0;
 }
