@@ -16,7 +16,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bondarenko</title>
 
     <script>$(function () {
         $(document).scroll(function () {
@@ -35,9 +35,11 @@
 <script src = "./Assets/particles.js"></script>
 <script src = "./Scripts/main.js"></script>
 
+<a id = "logo">VB</a>
+
+
 <div class="nav-bar">
     <ul>
-        <li id = "logo">VB</li>
         <li><a href="#particles-js">About</a></li>
         <li><a href = "#sun">Motivation</a></li>
         <li><a href ="#cont-text">Contacts</a></li>
@@ -48,7 +50,7 @@
 <div class = "big-title" >
     <p data-aos = "fade-up" data-aos-duration = "2000" id = "name">VLADISLAV BONDARENKO</p>
     <p data-aos = "fade-up" data-aos-duration = "2000" data-aos-delay="500">Data Scientist and Web-Developer</p>
-    <a data-aos = "fade-up" data-aos-duration = "2000" data-aos-delay="1000" style ="color: #a1a1a1;">Contact</a>
+    <a href = "#cont-text" data-aos = "fade-up" data-aos-duration = "2000" data-aos-delay="1000" style ="color: #a1a1a1;">Contact</a>
 </div>
 
 <!--    <p id="title">My skills</p>-->
@@ -99,20 +101,29 @@
 
 
 
+
+
+
+<!--<div class = "about"></div>-->
+<div class  = "sun" id="sun">
+    <h3 data-aos="zoom-in" data-aos-duration="1500">My motivation</h3>
+    <p data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">95% success is labor, and the remaining 5% is talent.<br> -Mozart</p>
+</div>
+
 <div class="contacts" id = "contacts">
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="1500">
         <i class="fas fa-envelope"></i>
         <h4>EMAIL</h4>
         <hr class="line">
         <p>v.bondarenko1@uniyar.ac.ru<br> bondarencko40@gmail.com</p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
         <i class="fas fa-mobile"></i>
         <h4>PHONE</h4>
         <hr class="line">
         <p>+7(961)025-73-37</p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
         <i class="fas fa-link"></i>
         <h4>LINKS</h4>
         <hr class="line">
@@ -122,14 +133,8 @@
         </div>
     </div>
 </div>
-<h3 id = "cont-text">CONTACTS</h3>
+<h3 data-aos="zoom-in" data-aos-duration="1500" id = "cont-text">CONTACTS</h3>
 
-
-<!--<div class = "about"></div>-->
-<div class  = "sun" id="sun">
-    <h3>My motivation</h3>
-    <p>95% success is labor, and the remaining 5% is talent.<br> -Mozart</p>
-</div>
 <footer>
 <p>Copyright © v.bondarenko1@uniyar.ac.ru</p>
 </footer>
