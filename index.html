@@ -17,18 +17,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Bondarenko</title>
-
     <script>$(function () {
         $(document).scroll(function () {
-            var $nav = $(".nav-bar");
+            var $nav = $(".navbar");
             $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
     });</script>
 
 </head>
-<body data-spy="scroll" data-target=".nav-bar">
+<body data-spy="scroll" data-target="#navbar-example">
 <script>
     AOS.init();
+
 </script>
 
 <div id="particles-js"></div>
@@ -36,17 +36,15 @@
 <script src = "./Scripts/main.js"></script>
 
 <a id = "logo">VB</a>
+<nav class = "navbar fixed-top" id = "navbar-example">
+    <ul class = "nav  ml-auto">
+            <li class = "nav-item"><a class="nav-link" href="#particles-js">About</a></li>
+        <li class = "nav-item"><a class="nav-link" href ="#table">My skills</a></li>
+            <li class = "nav-item"><a class="nav-link" href = "#sun">Motivation</a></li>
+            <li class = "nav-item"><a class="nav-link" href ="#cont-text">Contacts</a></li>
 
-
-<div class="nav-bar">
-    <ul>
-        <li><a href="#particles-js">About</a></li>
-        <li><a href = "#sun">Motivation</a></li>
-        <li><a href ="#cont-text">Contacts</a></li>
-        <li><a href ="#table">My skills</a></li>
     </ul>
-</div>
-
+</nav>
 <div class = "big-title" >
     <p data-aos = "fade-up" data-aos-duration = "2000" id = "name">VLADISLAV BONDARENKO</p>
     <p data-aos = "fade-up" data-aos-duration = "2000" data-aos-delay="500">Data Scientist and Web-Developer</p>
@@ -101,10 +99,6 @@
 
 
 
-
-
-
-<!--<div class = "about"></div>-->
 <div class  = "sun" id="sun">
     <h3 data-aos="zoom-in" data-aos-duration="1500">My motivation</h3>
     <p data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">95% success is labor, and the remaining 5% is talent.<br> -Mozart</p>

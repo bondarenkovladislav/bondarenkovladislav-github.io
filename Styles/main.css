@@ -3,6 +3,9 @@ html,body{
     height:100%;
     background:#111;
 }
+body{
+    position:relative;
+}
 
 html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -119,6 +122,7 @@ li:not(#logo){
     text-transform: uppercase;
     /*padding:1.5em;*/
     vertical-align: middle;
+
 }
 li:hover:not(#logo){
     background-color: rgba(69, 69, 69, 0.74);
@@ -160,17 +164,17 @@ li:hover:not(#logo){
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 2em;
-    margin:0.5em;
+    margin: 0.3em 0.5em;
     transition: all .5s ease;
     z-index: 2;
 }
 #logo:hover{
-    transform: scale(1.5,1.5);
-    margin: 1em;
+    transform: scale(1.2,1.2);
+    /*margin: 1em;*/
 }
 
 .sun{
-    top:294%;
+    top:292%;
     overflow: hidden;
     position:absolute;
     width:100%;
@@ -274,7 +278,7 @@ li:hover:not(#logo){
     display: flex;
     flex-direction: row;
     position: relative;
-    top:165%;
+    top:164%;
     width:100%;
     height:50%;
     /*background-image:url('https://i.pinimg.com/originals/1a/43/30/1a43301af0a2a695387fd21c972b77ed.jpg');*/
@@ -364,4 +368,33 @@ footer p{
     height:100%;
     color: #909090;
     margin-bottom:0;
+}
+.navbar{
+    padding:0 !important;
+    z-index: 0 !important;
+}
+.nav-link{
+    color:#cc732f;
+    padding:1.2em !important;
+    user-select: none;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.nav-link.active{
+    background-color: #0e0e0e;
+    color: #cc732f;
+    background-color: rgba(69, 69, 69, 0.54);
+}
+
+.nav-link:hover{
+    background-color: #0e0e0e;
+    color: #cc732f;
+    background-color: rgba(69, 69, 69, 0.54);
+}
+.navbar.scrolled{
+    background-color: rgba(38, 38, 38, 0.64) !important;
+    transition: background-color 200ms linear;
+    overflow: hidden;
+    z-index: 1 !important;
 }
