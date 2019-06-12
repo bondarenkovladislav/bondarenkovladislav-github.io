@@ -22,13 +22,8 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js{
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: #1d2022;
     background-image: url('http://1beautybar.by/wp-content/uploads/2016/02/main-background.jpg');
-    /*background-image: url('http://jmd.im/black_wallpapers/IV/desktop/BLACK_IV_desktop-1.jpg');*/
-    /*background-image: url('http://igeekbar.com/igeekbar/networks/uploadimgthumb/f69cd9e5-9849-4be1-bf9e-bc9d9770690a.jpg');*/
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -36,15 +31,11 @@ canvas {
 
 
 .big-title{
-    position:relative;
-    width: 100%;
-    top:40%;
     pointer-events: none;
     user-select: none;
 }
 
 #name{
-    text-align: center;
     font-size: 5em;
     font-family: 'Montserrat', sans-serif;
     color: #cc732f;
@@ -53,7 +44,6 @@ canvas {
 
 .big-title p{
     color: #a1a1a1;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     text-transform: uppercase;
@@ -64,11 +54,7 @@ canvas {
 .big-title a {
     text-decoration: none;
     outline: none;
-    display: block;
     padding: 20px 30px;
-    margin: 0 auto;
-    position: relative;
-    /*color: white;*/
     border: 1px solid rgb(204, 115, 47);
     background: none;
     font-weight: 300;
@@ -112,6 +98,15 @@ canvas {
 .big-title a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s; text-decoration: none;}
 .big-title a:hover {background: rgba(255,255,255,.2); text-decoration: none;}
 
+@media (max-width: 600px) {
+    .big-title #name {
+        font-size: 3em;
+    }
+    .big-title .specification{
+        font-size: 1.5em;
+    }
+}
+
 ul{
     list-style-type: none;
     overflow:hidden;
@@ -120,141 +115,69 @@ ul{
 li:not(#logo){
     float:right;
     text-transform: uppercase;
-    /*padding:1.5em;*/
     vertical-align: middle;
 
 }
 li:hover:not(#logo){
     background-color: rgba(69, 69, 69, 0.74);
-    /*overflow: hidden;*/
 }
-.nav-bar{
-    position: fixed;
-    width: 100%;
-    z-index:1;
-    height:7.6%;
-}
-
-.nav-bar.scrolled {
-    background-color: rgba(38, 38, 38, 0.99) !important;
-    /*background-color: black; !important;*/
-    transition: background-color 200ms linear;
-    overflow: hidden;
-}
-
-.nav-bar a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-decoration: none;
-    color:#cc732f;
-    padding:1.5em;
-    user-select: none;
-}
-.nav-bar a:hover{
-     text-decoration: none;
-     color: #cc732f;
- }
-
-#logo{
-    position: fixed;
-    /*float:left;*/
-    color: #cc732f;
+.navbar-brand{
+    color: #cc732f !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.6em !important;
     margin: 0.3em 0.5em;
     transition: all .5s ease;
-    z-index: 2;
 }
-#logo:hover{
+.navbar-brand:hover{
+    color: #cc732f !important;
     transform: scale(1.2,1.2);
-    /*margin: 1em;*/
 }
 
+.nav-item a{
+    color:#cc732f !important;
+}
 .sun{
-    top:292%;
-    overflow: hidden;
-    position:absolute;
-    width:100%;
-    height:100%;
-    display:block;
-    align-items: center;
-    /*background-image: url('../res/aia_304_sunrise_wallpaper_1920x1080.jpg');*/
     background-image: url('../res/aigetty.jpg');
-    background-size:65% 65%;
-    /*background-position:50% 140%;*/
+    background-size:1000px 600px;
     background-repeat: no-repeat;
     background-position: bottom;
-    text-align: center;
     background-color:black;
 }
-.sun h3{
+@media (max-width: 600px) {
+    .sun{
+        background-size: 900px 500px;
+    }
+
+}
+.motivation h3{
     color:#cc732f;
     text-transform: uppercase;
     font-family: Montserrat;
     font-size: 4em;
     font-weight: bold;
-    margin-top:10%;
-    display:block;
-    width:100%;
-    position:absolute;
-    /*color: #db5629;*/
-    /*font-size:3em;*/
 }
-.sun p{
+.motivation p{
     font-family: Montserrat;
-    position:absolute;
-    display:block;
-    width:100%;
-    top:27%;
     font-size:2em;
     color: #6e6e6e;
 }
-.table{
-    top:68%;
-    display: flex;
-    padding: 5% 20%;
-    position:relative;
-    height:200%;
-    width:100%;
+#skills-section{
     background:linear-gradient(black, #6e6e6e, black);
-    flex-direction: column;
-
 }
 .table h3{
-    text-align: center;
     color:#cc732f;
     font-size: 4em;
     text-transform: uppercase;
     font-family: Montserrat;
-    margin-bottom:5%;
     font-weight: bold;
 }
-.table .row {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
+
+.table .row div{
+    background-color: #0e0e0e;
 }
 
-.table .column{
-    flex: 50%;
-    max-width: 50%;
-    height:100%;
-}
-.table .row div{
-    display:flex;
-    height:100%;
-    flex:50%;
-    background-color: #0e0e0e;
-    flex-direction: column;
-}
 .table .row p{
-    padding:5% 0 0 10%;
-    flex:50%;
-    margin-bottom: 0;
     color: #8b8b8b;
     font-size: 1.5em;
     font-family: Montserrat;
@@ -263,73 +186,43 @@ li:hover:not(#logo){
 .table .row h4{
     font-family: Montserrat;
     font-size: 2em;
-    padding:10% 0 0 10%;
     color:#cc732f;
-    margin-bottom:0;
 }
 
-.table .row .flex-image{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-.contacts{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top:164%;
-    width:100%;
-    height:50%;
-    /*background-image:url('https://i.pinimg.com/originals/1a/43/30/1a43301af0a2a695387fd21c972b77ed.jpg');*/
+#contact-section{
     background-color: black;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 4% 15%;
 }
-.contacts .card{
-    margin-top:7%;
-    display:flex;
-    flex:30%;
-    height:70%;
-    margin-left:2%;
-    margin-bottom: 1%;
+#contact-section .card{
     background-color: #383838;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     border-bottom: 3px solid orange;
 }
-.contacts h4{
+#contact-section h4{
     color: rgb(169, 169, 169);
     font-family: Montserrat;
     font-size: 1.7em;
 }
-.contacts hr{
+#contact-section hr{
     border-color: orange;
     border-width: .25rem;
     width: 3rem;
 }
+
 .card i{
     color:orange;
     font-size: 1.5em;
-    margin-bottom:5%;
 }
-.contacts p{
+#contact-section p{
     font-family: Montserrat;
     font-size:1.2em;
     color: rgba(212, 212, 212, 0.91);
 }
-.contacts .icon-row i{
-    /*padding-right: 0.2em;*/
+#contact-section .icon-row i{
     font-size: 2em;
     color: rgba(212, 212, 212, 0.91);
     transition: font-size 0.3s, color 0.5s;
 }
-.contacts .icon-row i:hover{
+#contact-section .icon-row i:hover{
     font-size: 2.3em;
     color:orange;
 }
@@ -338,9 +231,6 @@ li:hover:not(#logo){
     font-size: 4em;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
-    position: relative;
-    top:120%;
     font-family: Montserrat;
     user-select: none;
 }
@@ -352,22 +242,11 @@ li:hover:not(#logo){
 }
 
 footer{
-    top:152%;
-    position: relative;
-    height: 10%;
-    /*background-color: #606060*/
-    /*background:linear-gradient(black, #5d5d5d);*/
     background-color: black;
 
 }
 footer p{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    width:100%;
-    height:100%;
     color: #909090;
-    margin-bottom:0;
 }
 .navbar{
     padding:0 !important;
@@ -379,6 +258,7 @@ footer p{
     user-select: none;
     font-family: Montserrat;
     font-weight: 400;
+    user-select: none;
 }
 
 .nav-link.active{
