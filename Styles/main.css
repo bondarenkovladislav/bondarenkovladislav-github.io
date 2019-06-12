@@ -148,7 +148,11 @@ li:hover:not(#logo){
     .sun{
         background-size: 900px 500px;
     }
-
+    .motivation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 .motivation h3{
     color:#cc732f;
@@ -162,6 +166,7 @@ li:hover:not(#logo){
     font-size:2em;
     color: #6e6e6e;
 }
+
 #skills-section{
     background:linear-gradient(black, #6e6e6e, black);
 }
