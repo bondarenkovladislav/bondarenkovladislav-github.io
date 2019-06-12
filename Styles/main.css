@@ -148,6 +148,9 @@ li:hover:not(#logo){
     .sun{
         background-size: 900px 500px;
     }
+
+}
+@media (max-width: 800px) {
     .motivation{
         display: flex;
         flex-direction: column;
