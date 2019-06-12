@@ -150,13 +150,13 @@ li:hover:not(#logo){
     }
 
 }
-@media (max-width: 800px) {
-    .motivation{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+/*@media (max-width: 800px) {*/
+/*    .motivation{*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        justify-content: center;*/
+/*    }*/
+/*}*/
 .motivation h3{
     color:#cc732f;
     text-transform: uppercase;
