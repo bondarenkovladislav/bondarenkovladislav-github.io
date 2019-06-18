@@ -1,0 +1,27 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+h2{
+    color: #ffc60c;
+    font-family: 'Montserrat', sans-serif;
+}
+.question{
+    color: #ffb700;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.question:visited{
+    color: #c77e00;
+}
+.question:hover{
+    color:orange;
+}
+
+/*a:hover{*/
+/*    color: orange;*/
+/*    text-decoration: none;*/
+/*}*/
