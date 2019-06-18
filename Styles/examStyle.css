@@ -5,7 +5,7 @@ body{
     height: 100%;
 }
 h2{
-    color: #ffc60c;
+    color: #ffe10f;
     font-family: 'Montserrat', sans-serif;
 }
 .question{
@@ -19,9 +19,6 @@ h2{
 }
 .question:hover{
     color:orange;
+    text-decoration: none;
+    font-weight: bold;
 }
-
-/*a:hover{*/
-/*    color: orange;*/
-/*    text-decoration: none;*/
-/*}*/
