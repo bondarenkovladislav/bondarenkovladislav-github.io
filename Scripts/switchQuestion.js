@@ -1,6 +1,5 @@
 let lastObject;
 $('.clickable').click( function(e) {
-    e.preventDefault();
     console.log(e.target.id);
     switch (e.target.id) {
         case 'one':
@@ -185,7 +184,5 @@ $('.clickable').click( function(e) {
     function createWindow(head,imgSrc){
         lastObject = {head:head,src:imgSrc};
         localStorage.setItem('lastObject',JSON.stringify(lastObject));
-
-        let newWin = window.open('answers.html');
     }
 } );
