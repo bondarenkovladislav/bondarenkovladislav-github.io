@@ -1,3 +1,4 @@
+let lastObject;
 $('.clickable').click( function(e) {
     e.preventDefault();
     console.log(e.target.id);
@@ -43,6 +44,11 @@ $('.clickable').click( function(e) {
         case 'twelve':
             createWindow("12. Динамика вращательного движения(момент сил,\n" +
                 "        момент пары сил,момент импульса, момент инерции, уравнение моментов, секториальная скорость)",'res/AnswerImages/12.jpg');
+            break;
+        case 'thirteen':
+            createWindow("13. Момент импульса,\n" +
+                "    момент инерции и кинетическая энергия системы материальных точек и абсолютно твердого тела. \n" +
+                "    Преобразование моментов при переходе к новой системе отсчета", 'res/AnswerImages/13.jpg');
             break;
         case 'fourteen':
             createWindow("14. Теорема Гюйгенса-Штейнера. Вычисление моментов\n" +
@@ -100,6 +106,14 @@ $('.clickable').click( function(e) {
             createWindow("26. Адиабатический и \n" +
                 "    политропический процесс", 'res/AnswerImages/26.jpg');
             break;
+        case 'twentySeven':
+            createWindow("27. Распределение молекул\n" +
+                "    по скоростям(Распределение Максвела)", 'res/AnswerImages/27.jpg');
+            break;
+        case 'twentyEight':
+            createWindow("28. Распределение Больцмана.\n" +
+                "    Обобщенный закон распределения молекул по энергиям",'res/AnswerImages/28.jpg');
+            break;
         case 'twentyNine':
             createWindow("29. Обратимый и необратимый процесс,\n" +
                 "    цикл. Первое начало термодинамики", 'res/AnswerImages/29.jpg');
@@ -145,22 +159,33 @@ $('.clickable').click( function(e) {
             createWindow("40. Проводники в электрическом поле.\n" +
                 "    Свободные заряды и граничные условия для вектора напряженности электрического поля",'res/AnswerImages/40.jpg');
             break;
+        case 'fortyOne':
+            createWindow("41. Электрическая емкость\n" +
+                "    уединенного проводника. Конденсатор",'res/AnswerImages/41.jpg');
+            break;
+        case 'fortyTwo':
+            createWindow("42. Емкость плоского,\n" +
+                "    сферического и цилиндрического конденсаторов. Последовательное и параллельное\n" +
+                "    включение конденсаторов",'res/AnswerImages/42.jpg');
+            break;
+        case 'fortyThree':
+            createWindow("43. Электрическая энергия\n" +
+                "    (конденсатора, системы зарядов, электрического поля)",'res/AnswerImages/43.jpg');
+            break;
+        case 'fortyFour':
+            createWindow("44. Стационарный электрический\n" +
+                "    ток(плотность тока, ток через площадку, электрическое поле стационарного тока, отсутствие зарядов в\n" +
+                "        объеме)", 'res/AnswerImages/44.jpg');
+            break;
+        case 'fortyFive':
+            createWindow("45. Закон Ома",'res/AnswerImages/45.jpg');
+            break;
     }
 
     function createWindow(head,imgSrc){
-        let newWin = window.open('answers.html');
-        newWin.onload = function() {
-            // создать div в документе нового окна
-            let img = newWin.document.createElement('img'),
-                body = newWin.document.body;
-            img.className = 'img-fluid';
+        lastObject = {head:head,src:imgSrc};
+        localStorage.setItem('lastObject',JSON.stringify(lastObject));
 
-            let header = newWin.document.createElement('h2');
-            header.textContent = head;
-            img.src = imgSrc;
-            body.insertBefore(header, body.firstChild);
-            // body.insertBefore(header, body.firstChild);
-            body.appendChild(img);
-        }
+        let newWin = window.open('answers.html');
     }
 } );
