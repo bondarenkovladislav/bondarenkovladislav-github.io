@@ -124,6 +124,27 @@ $('.clickable').click( function(e) {
             createWindow("35. Работа электростатических\n" +
                 "    сил. Потенциальность электростатического поля. Связь потенциала и напряженности",'res/AnswerImages/35.jpg');
             break;
+        case 'thirtySix':
+            createWindow("36. Электрический диполь\n" +
+                "    (потенциал и поле, создаваемые диполем)",'res/AnswerImages/36.jpg');
+            break;
+        case 'thirtySeven':
+            createWindow("37. Элетрический диполь\n" +
+                "    (силы, действующие на диполь со стороны электрического поля, энергия диполя в электрическом поле)",'res/AnswerImages/37.jpg');
+            break;
+        case 'thirtyEight':
+            createWindow("38. Поляризуемость молекул,\n" +
+                "    вектор поляризации вещества. Связанный заряд", 'res/AnswerImages/38.jpg');
+            break;
+        case 'thirtyNine':
+            createWindow("39. Вектор электрической\n" +
+                "    индукции. Теорема Гаусса в веществе. Граничные услвия для векторов электрической индукции и напряженности\n" +
+                "    (40 вопрос)",'res/AnswerImages/39.jpg');
+            break;
+        case 'forty':
+            createWindow("40. Проводники в электрическом поле.\n" +
+                "    Свободные заряды и граничные условия для вектора напряженности электрического поля",'res/AnswerImages/40.jpg');
+            break;
     }
 
     function createWindow(head,imgSrc){
