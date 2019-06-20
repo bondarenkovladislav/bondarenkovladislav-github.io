@@ -9,7 +9,7 @@ $('.clickable').click( function(e) {
             createWindow("2. Кинематика материальной точки(система отсчета, траектория, путь, скорость и ускорение)", 'res/AnswerImages/2.jpg');
             break;
         case 'three':
-            createWindow("3. Кинематика абсолютно твердого тела (поступательное и вращательное движение, соотношение между линейными и угловыми кинематическими величинами)",'res/AnswerImages/3.jpeg');
+            createWindow("3. Кинематика абсолютно твердого тела (поступательное и вращательное движение, соотношение между линейными и угловыми кинематическими величинами)",'res/AnswerImages/3.jpg');
             break;
         case 'four':
             createWindow('4. Динамические величины: масса, сила, момент силы, импульс,\n' +
@@ -133,6 +133,11 @@ $('.clickable').click( function(e) {
             createWindow("33. Напряженность электростатического поля.\n" +
                 "    Силовые линии. Потенциал. Принцип суперпозиции электрических полей.",'res/AnswerImages/33.jpg');
             break;
+        case 'thirtyFour':
+            createWindow("34. Теорема Гаусса для вектора напряженности\n" +
+                "    электрического поля. Применение теоремы Гаусса для вычисления электростатических полей:\n" +
+                "    сферическая, плоская и цилиндрическая симметрия", 'res/AnswerImages/34.jpg');
+            break;
         case 'thirtyFive':
             createWindow("35. Работа электростатических\n" +
                 "    сил. Потенциальность электростатического поля. Связь потенциала и напряженности",'res/AnswerImages/35.jpg');
@@ -178,6 +183,59 @@ $('.clickable').click( function(e) {
             break;
         case 'fortyFive':
             createWindow("45. Закон Ома",'res/AnswerImages/45.jpg');
+            break;
+        case 'fortySix':
+            createWindow("46. Сторонние силы.\n" +
+                "    Электродвижущая сила (ЭДС), источники тока",'res/AnswerImages/46.jpg');
+            break;
+        case 'fortySeven':
+            createWindow("47. Последовательное и параллельное\n" +
+                "    соединение резисторов. Правило Кирхгофа",'res/AnswerImages/47.jpg');
+            break;
+        case 'fortyEight':
+            createWindow("48. Закон Джоуля-Ленца\n" +
+                "    (тепловая мощность тока, работа сторонних сил)",'res/AnswerImages/48.jpg');
+            break;
+        case 'fortyNine':
+            createWindow("49. Квазистационарный ток.\n" +
+                "    Зарядка и разрядка конденсатора",'res/AnswerImages/49.jpg');
+            break;
+        case 'fiftyOne':
+            createWindow("51. Закон Био-Савара\n" +
+                "    (магнитное поле движущегося заряда, элемента тока)",'res/AnswerImages/51.jpg');
+            break;
+        case 'fiftyTwo':
+            createWindow("52. Теорема о циркуляции магнитной индукции",'res/AnswerImages/52.jpg');
+            break;
+        case 'fiftyThree':
+            createWindow("53. Теорема Гаусса для магнитной индукции",'res/AnswerImages/53.jpg');
+            break;
+        case 'fiftyFour':
+            createWindow("54. Сила Лоренца и сила Ампера",'res/AnswerImages/54.jpg');
+            break;
+        case 'fiftyFive':
+            createWindow("55. Магнитный \n" +
+                "    дипольный момент. Силы Ампера, действующие на виток с током",'res/AnswerImages/55.jpg');
+            break;
+        case 'fiftySix':
+            createWindow("56. Магнитное поле в веществе.\n" +
+                "    Вектор намагниченности", 'res/AnswerImages/56.jpg');
+            break;
+        case 'fiftySeven':
+            createWindow("57. Вектор напряженности\n" +
+                "    магнитного поля. Теорема о циркуляции магнитного поля в веществе. Граничные условия для векторов\n" +
+                "    магнитной индукции и напряженности", 'res/AnswerImages/57.jpg');
+            break;
+        case 'fiftyEight':
+            createWindow("58. Электромагнитная индукция\n" +
+                "    (Закон Фарадея). Индуктивность",'res/AnswerImages/58.jpg');
+            break;
+        case 'fiftyNine':
+            createWindow("59. Энергия магнитного поля",'res/AnswerImages/59.jpg');
+            break;
+        case 'sixty':
+            createWindow("60. Ток смещения. Система уравнений\n" +
+                "    Максвела",'res/AnswerImages/60.jpg');
             break;
     }
 
