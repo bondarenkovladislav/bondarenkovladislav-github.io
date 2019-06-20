@@ -200,6 +200,10 @@ $('.clickable').click( function(e) {
             createWindow("49. Квазистационарный ток.\n" +
                 "    Зарядка и разрядка конденсатора",'res/AnswerImages/49.jpg');
             break;
+        case 'fifty':
+            createWindow("50. Стационарное магнитное поле.\n" +
+                "    Вектор магнитной индукции и способы его измерения",'res/AnswerImages/50.jpg');
+            break;
         case 'fiftyOne':
             createWindow("51. Закон Био-Савара\n" +
                 "    (магнитное поле движущегося заряда, элемента тока)",'res/AnswerImages/51.jpg');
