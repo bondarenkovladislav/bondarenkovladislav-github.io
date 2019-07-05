@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "Styles/tictactoe.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<div class="left-side">
+    <table class="battlefield">
+        <caption id="score"></caption>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button id = 'reset' class="brk-btn">Reset Field</button>
+</div>
+<div class="right-side">
+    <h2>History</h2>
+    <div class="history-display"></div>
+    <button class="brk-btn" id = 'clear-history'>Clear History</button>
+</div>
+<script type="module" src = "Scripts/tictactoe/initialise.js"></script>
+<script type="module" src="Scripts/tictactoe/eventListeners.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
