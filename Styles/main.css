@@ -109,7 +109,6 @@ canvas {
 
 ul{
     list-style-type: none;
-    overflow:hidden;
     position:relative;
 }
 li:not(#logo){
@@ -278,11 +277,14 @@ footer p{
 .nav-link:hover{
     background-color: #0e0e0e;
     color: #cc732f;
-    background-color: rgba(69, 69, 69, 0.54);
+    background-color: rgba(69, 69, 69, 0.54) !important;
 }
 .navbar.scrolled{
     background-color: rgba(38, 38, 38, 0.64) !important;
     transition: background-color 200ms linear;
     overflow: hidden;
     z-index: 1 !important;
+}
+.dropdown-menu{
+    background-color: rgba(69, 69, 69, 0.54) !important;
 }

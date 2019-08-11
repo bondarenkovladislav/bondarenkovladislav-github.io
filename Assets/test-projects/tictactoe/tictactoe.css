@@ -12,7 +12,7 @@ html,body{
 .battlefield {
     width: 600px;
     height: 600px;
-    background:url("../res/bg-dark.jpg");
+    background:url("res/bg-dark.jpg");
 }
 
 .marker{

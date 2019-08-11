@@ -80,7 +80,7 @@ export default function Score() {
         Метод обнуляет количество очков пользователя, компьютера и сохраняет новые значени в кеш
      */
 
-    function clearScore(){
+    function clearScore() {
         computerScore=0;
         userScore = 0;
         saveScore();
@@ -114,7 +114,8 @@ export default function Score() {
             setComputerScore,
             getSavedScore,
             getUserScore,
-            getComputerScore
+            getComputerScore,
+            clearScore
     };
 
     return publicAPI;
